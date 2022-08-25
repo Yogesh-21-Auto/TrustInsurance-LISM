@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegionalRegressionTesting">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="org.tyss.practice.group.PaymentTest">
+				<methods>
+					<include name="deleteClientTest" />
+				</methods>
+			</class>
+			<class name="org.tyss.practice.group.NomineeTest">
+				<methods>
+					<include name="deleteNomineeTest" />
+				</methods>
+			</class>
+			<class name="org.tyss.practice.group.ClientsTest">
+				<methods>
+					<include name="deletePaymentTest" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- RegionalRegressionTesting -->

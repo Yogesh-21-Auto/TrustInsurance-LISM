@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Listener]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.trustinsurance.genericutility.LisImpClass"/>
+  </listeners>
+  <test thread-count="2" parallel="methods" name="Test-Runner-Chrome(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.trustinsurance.clients.ClientsTest">
+        <methods>
+          <include name="configAM"/>
+          <include name="LoginWithNomineeIDClientPasswordTest"/>
+          <include name="configBM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="CreateClientIdPasswordLoginWithSameTest"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.trustinsurance.clients.ClientsTest -->
+      <class name="com.trustinsurance.search.SearchTest">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="CreateClientIdPasswordLoginWithSameTest"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.trustinsurance.search.SearchTest -->
+    </classes>
+  </test> <!-- Test-Runner-Chrome(failed) -->
+</suite> <!-- Failed suite [Listener] -->
